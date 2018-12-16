@@ -24,6 +24,9 @@ namespace FirmaDigital_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Ola k ase");
+
+            return;
             var certificado = new Certificado(@"c:\demos\certificado.pfx");
             var firmante = new Firmante(certificado);
             firmante.Firmar(@"c:\demos\documento.pdf", @"c:\demos\documento-firmado.pdf");
